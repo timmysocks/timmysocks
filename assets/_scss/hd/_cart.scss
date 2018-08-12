@@ -1,0 +1,286 @@
+/* Global "table" column settings */
+.product-image { float: left; width: 20%; }
+.product-details { float: left; width: 37%; }
+.product-price { float: left; width: 12%; }
+.product-quantity { float: left; width: 10%; }
+.product-removal { float: left; width: 9%; }
+.product-line-price { float: left; width: 12%; text-align: right; }
+
+
+/* This is used as the traditional .clearfix class */
+.group:before,
+.group:after {
+    content: '';
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1;
+}
+
+
+/* Apply clearfix in a few places */
+.shopping-cart, .column-labels, .product, .totals-item {
+  @extend .group;
+}
+
+
+/* Apply dollar signs */
+.product .product-price:after, .product .product-line-price:after, .totals-value:after {
+  content: 'LEI';
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+/* Column headers */
+.column-labels {
+  label {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e6e6e6;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .product-image, .product-details, .product-removal {
+    text-indent: -9999px;
+  }
+}
+
+
+/* Product entries */
+.product {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f7f7f7;
+
+  .product-image {
+    text-align: center;
+    img {
+      width: 100px;
+    }
+  }
+
+  .product-details {
+    text-align: left;
+    .product-title {
+      margin-right: 20px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .product-description {
+      margin: 5px 20px 5px 0;
+      padding: 0;
+      text-shadow: none;
+      color: grey;
+      letter-spacing: 0;
+    }
+  }
+
+  .product-quantity {
+    input {
+      width: 50px;
+      height: 40px;
+      margin-top: -4px;
+    }
+  }
+
+  .remove-product {
+    border: 0;
+    padding: 4px 8px !important;
+    background-color: #ec5959;
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+    border-radius: 3px;
+  }
+
+  .remove-product:hover {
+    background-color: #a44;
+  }
+}
+
+
+/* Totals section */
+.totals {
+  .totals-item {
+    clear: both;
+    width: 100%;
+    margin-bottom: 10px;
+
+    label {
+      float: left;
+      clear: both;
+      width: 79%;
+      text-align: right;
+    }
+
+    .totals-value {
+      float: right;
+      width: 21%;
+      text-align: right;
+    }
+  }
+
+}
+
+.btn.btn-checkout {
+  float: right;
+  margin-top: 20px;
+  background-color: #6b6;
+  color: #fff;
+}
+
+.btn.btn-checkout:hover {
+  border-color: #6b6;
+  color: #6b6;
+}
+
+@media screen and (max-width:992px){
+  .column-labels label{
+    font-size: 10px;
+  }
+
+  .product .remove-product{
+    padding: 4px 4px;
+    font-size: 9px;
+    margin-top: 5px;
+  }
+}
+
+/* Make adjustments for tablet */
+@media screen and (max-width: 768px) {
+
+  .shopping-cart {
+    margin: 0;
+    padding-top: 20px;
+    border-top: 2px solid #e6e6e6 ;
+  }
+
+  .column-labels {
+    display: none;
+  }
+
+  .product-image {
+   // float: right;
+    width: auto;
+    img {
+     // margin: 0 0 10px 10px;
+    }
+  }
+
+  .product-details {
+    float: none;
+    margin-bottom: 10px;
+    width: auto;
+  }
+
+  .product-price {
+    clear: both;
+    width: 70px;
+  }
+
+  .product-quantity {
+    width: 100px;
+    input {
+      margin-left: 20px;
+    }
+  }
+
+  .product-quantity:before {
+    content: 'x';
+    position: relative;
+    top: -4px;
+  }
+
+  .product-removal {
+    width: auto;
+  }
+
+  .product-line-price {
+    float: right;
+    width: 70px;
+  }
+
+  .product .product-price:after, .product .product-line-price:after, .totals-value:after{
+    font-size: 9px;
+  }
+
+}
+
+
+/* Make more adjustments for phone */
+@media screen and (max-width: 350px) {
+
+  .product-removal {
+    float: right;
+  }
+
+  .product-line-price {
+    float: right;
+    clear: left;
+    width: auto;
+    margin-top: 10px;
+  }
+
+  .product .product-line-price:before {
+    content: 'Item Total: $';
+  }
+
+  .totals {
+    .totals-item {
+      label {
+        width: 60%;
+      }
+
+      .totals-value {
+        width: 40%;
+      }
+    }
+  }
+}
+
+.tab-pane{
+
+  .product{
+    margin-bottom: 0;
+    padding: 25px 0;
+    .product-line-price, .product-line-text{
+      color: #555;
+      margin-right: 50px;
+      float: left;
+    }
+    .product-line-price{
+      float: none;
+    }
+
+    .product-line-text{
+      i{
+        font-size: 12px;
+        margin-bottom: 2px;
+        margin-right: 6px;
+      }
+
+      &.small{
+        font-size: 16px;
+        color: #0b518c;
+      }
+    }
+
+  }
+}
+
+.collapse, .collapsing{
+
+  border: 1px solid #dadada;
+  border-top: none;
+
+  .product{
+    padding-top: 10px;
+    border-top: 1px solid #dadada;
+    border-bottom: none;
+  }
+
+}

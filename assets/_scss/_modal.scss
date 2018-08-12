@@ -1,0 +1,21 @@
+.modal-dialog{
+  max-width: 700px;
+}
+
+.modal-content{
+  .modal-body{
+    table{
+      width: 100%;
+      tbody{
+        tr{
+          td{
+            padding-bottom: 10px;
+          }
+          td:first-child{
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

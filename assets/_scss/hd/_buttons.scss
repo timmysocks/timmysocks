@@ -1,0 +1,361 @@
+.btn,a.btn{
+  position: relative;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  border:2px solid white;
+  background: white;
+  color:  black;
+  z-index: 3;
+  vertical-align: middle;
+  border-radius: 3px;
+  font-size: 10px;
+  padding: 7px 25px !important;
+
+  &:hover{
+    background: transparent;
+    color: white;
+  }
+
+  &:focus{
+    box-shadow: none;
+  }
+  &.btn-simple{
+    background: transparent;
+    color: white;
+    &:hover{
+      background: rgba(255,255,255,0.1);
+    }
+  }
+  &.btn-link{
+    background: transparent;
+    border: none;
+    color: white;
+    i{
+      position: absolute;
+      left: -5px;
+      top: 50%;
+      transform: translate(0,-50%);
+      transition: 0.3s ease;
+    }
+
+    &:hover{
+      i{
+        transition: 0.3s ease;
+        left: -15px;
+      }
+    }
+  }
+
+
+  &.btn-shadow{
+    box-shadow: 2px 3px 12px 0px #61616138;
+  }
+
+  &.btn-sm{
+    font-size: 8px;
+    padding: 5px;
+
+  }
+
+  &.btn-round{
+    border-radius: 15px;
+  }
+
+  &.btn-blue{
+    background: #6468ea;
+    border-color: #6468ea;
+    color: white;
+    &:hover{
+      background: transparent;
+      color: #6468ea;
+    }
+  }
+
+  &.btn-orange,a.btn-orange{
+    background: #ffa64e;
+    border-color: #ffa64e;
+    color: white;
+    &:hover{
+      background: transparent;
+      color: #ffa64e;
+    }
+  }
+
+  &.btn-danger{
+    background: red;
+    border-color: red;
+    color: white;
+    &:hover{
+      background: transparent;
+      color: red;
+    }
+  }
+
+  &.btn-default{
+    background: #ccc;
+    border-color: #ccc;
+    color: white;
+    &:hover{
+      background: transparent;
+      color: #ccc;
+    }
+  }
+
+  &.btn-find-more{
+    margin-top: 15px;
+  }
+
+  &.w-100{
+    width: 100%;
+  }
+
+  &.btn-cart-blue{
+    cursor: pointer;
+     background: #0069bb;
+     border-color: #0069bb;
+     color: white;
+     &:hover{
+       background: #005190;
+       border-color:#005190;
+     }
+
+     &:focus{
+       box-shadow: none;
+     }
+  }
+
+
+    &.btn-cart-green{
+      cursor: pointer;
+       background: #008659;
+       border-color: #008659;
+       color: white;
+       &:hover{
+         background:#005a00;
+         border-color: #005a00;
+       }
+
+       &:focus{
+         box-shadow: none;
+       }
+    }
+
+    &.btn-cart-purple{
+      cursor: pointer;
+       background: #7040c1;
+       border-color: #7040c1;
+       color: white;
+       &:hover{
+         background: #3c1b75;
+         border-color: #3c1b75;
+
+       }
+
+       &:focus{
+         box-shadow: none;
+       }
+    }
+
+
+
+  .caret{
+    position: absolute;
+    border-top: 5px solid black;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+  }
+
+  &[aria-expanded="true"]{
+    .caret{
+      transform: rotate(180deg);
+      transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+      -moz-transition: 0.3s ease;
+      -webkit-transition: 0.3s ease;
+    }
+  }
+
+  i{
+    position: relative;
+    font-size: 12px;
+    transition: 0.2s ease;
+    &.icon-left{
+      margin-right: 10px;
+    }
+
+    &.icon-right{
+      margin-top: -4px;
+      margin-left: 25px;
+    }
+  }
+
+  &.btn-icon{
+    padding-right: 15px !important;
+    i{
+      margin-left: 15px;
+    }
+  }
+
+  &.btn-lg{
+    font-size: 14px;
+    border-radius: 4px;
+    i{
+      font-size: 20px;
+    }
+
+    &.btn-round{
+      border-radius: 25px;
+    }
+  }
+
+}
+.section-first{
+  .btn{
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+}
+
+.btn-arrow-down{
+  position: absolute;
+  color: white;
+  z-index: 3;
+  border: none;
+  bottom: 0;
+  background: transparent;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 35px;
+  animation: animation-top-bottom-arrow 2s infinite;
+  &:focus{
+    box-shadow: none;
+  }
+}
+
+.btn-arrow-up{
+  position: absolute;
+  color: white;
+  z-index: 3;
+  border: none;
+  background: transparent;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 35px;
+  animation: animation-bottom-top-arrow 2s infinite;
+  &:focus{
+    box-shadow: none;
+  }
+}
+
+.label-arrow-down{
+  cursor: pointer;
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.label-arrow-up{
+  cursor: pointer;
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  transform: translate(-50%);
+  top: 0%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+
+.btn-modify{
+  position: relative;
+  margin-top: 50%;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 10;
+  background: white;
+  color: #555;
+  border: 2px solid #555;
+  padding: 10px 43px;
+  &:hover{
+    background: #555;
+    color: white;
+  }
+}
+
+.btn-perceed{
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  background: orange;
+  padding: 10px 43px;
+  color: white;
+  z-index: 10;
+  border: 2px solid orange;
+  &:hover{
+    background: white;
+    color: orange;
+  }
+}
+
+
+.btn-box{
+  cursor: pointer;
+  position: relative;
+  top: 90%;
+  border: 2px solid orange;
+  color: white;
+  background: orange;
+  padding: 10px 43px;
+  &:hover{
+    background: white;
+    color: orange;
+  }
+
+  &:focus{
+    box-shadow: none;
+  }
+}
+
+.btn-group .btn{
+  cursor: pointer;
+  padding: 8px 10px !important;
+  background: transparent;
+  margin-right: 5px;
+  border:2px solid black;
+  color: black;
+  border-radius: 0;
+  i{
+    font-size: 10px;
+  }
+
+  &:hover, &:active{
+    background: black;
+    i{
+      color: white;
+    }
+  }
+
+  &:focus{
+    box-shadow: none;
+  }
+}
+
+a[aria-expanded="true"]{
+  i.icon-right{
+    @include rotate-180;
+    transition: 0.2s ease;
+    margin-top: 4px;
+  }
+}

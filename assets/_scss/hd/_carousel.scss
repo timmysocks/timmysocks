@@ -1,0 +1,58 @@
+.carousel-inner{
+  height: 100vh;
+  .carousel-item{
+    height: 100%;
+
+    #accordion, #accordionTank, #accordionDuck{
+      position: absolute;
+      top: 35%;
+      right: 5%;
+      width: 300px;
+      .card{
+        margin-bottom: 10px;
+        background: transparent;
+        width: 100%;
+
+        .card-header{
+          background: transparent;
+          border: none;
+          padding: 0;
+          h5{
+            button{
+              padding: 0 !important;
+              text-transform: capitalize;
+              font-weight: 400;
+              color: white;
+              font-size: 1.4em;
+              padding-left: 0;
+              text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+              &:hover,
+              &:focus{
+                text-decoration: none;
+              }
+
+              .caret{
+                border-top: 5px solid white;
+                top: 15px;
+                left: 110%;
+
+              }
+
+            }
+          }
+        }
+        .card-body{
+          color: white;
+          padding: 0;
+          text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+        }
+
+        .collapse, .collapsing{
+          border: none;
+        }
+      }
+
+
+    }
+  }
+}

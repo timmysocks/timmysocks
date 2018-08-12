@@ -1,0 +1,50 @@
+
+//animations
+
+@keyframes opacity{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes increase {
+    100% {
+        width: 68px;
+    }
+}
+
+@keyframes rotate{
+  0% {transform: rotate(180deg);}
+  100% {transform: rotate(-180deg);}
+}
+
+@keyframes rotate-reverse{
+  0% {transform: rotate(-180deg);}
+  100% {transform: rotate(180deg);}
+}
+
+@keyframes animation-top-bottom {
+    0%   {top: 30%;}
+    50%  {top: 25%;}
+    100% {top: 30%;}
+}
+@keyframes animation-details{
+  40%   {bottom:-270px;}
+  70%  {bottom:-250px;}
+  100% {bottom:-270px;}
+}
+@keyframes animation-top-bottom-arrow {
+    0%   {bottom: 3%;}
+    50%  {bottom: 6%;}
+    100% {bottom: 3%;}
+}
+
+@keyframes animation-bottom-top-arrow {
+    0%   {top: 1%;}
+    50%  {top: 3%;}
+    100% {top: 1%;}
+}
+
+
+@keyframes animation-rotation{
+  0% {transform:rotate(0);}
+  100% {transform:rotate(180deg);}
+}
