@@ -1,17 +1,77 @@
----
-brand: index
----
-
-
 <html>
 <head>
 
-  {% include head.html %}
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Hermes-Dashboard</title>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- <meta name="viewport" content="width=device-width" /> -->
+
+  <!--  Bootstrap core CSS  -->
+<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+
+<!--  Hermes Dashboard CSS    -->
+<link rel="stylesheet" type="text/css" href="../assets/css/hd.css">
+
+<!--  Fonts and Icons   -->
+<link rel="stylesheet" type="text/css" href="../assets/css/hermes-icons.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link href='http://fonts.googleapis.com/css?family=Roboto:900|Lobster|Montserrat:400,500,600,900|Muli:900|Pacifico|Abril+Fatface|Dosis:800' rel='stylesheet' type='text/css'>
+
 
 </head>
   <body class="index">
 
-    {% include navbar.html %}
+    <nav class="navbar navbar-expand-lg   navbar-text-blue navbar-absolute ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="../assets/img/logo-blue.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-collapse-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a href="./index.html">
+                <img src="../assets/img/logo-blue.png">
+              </a>
+            </div>
+            <div class="col-6 collapse-close">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbar_global" aria-expanded="true" aria-label="Toggle navigation">
+                <i class="fa fa-times"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav navbar-left">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">ACASA</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="products.html">MAGAZIN<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">DESPRE NOI</a>
+        </li>
+
+      </ul>
+    
+    </div>
+  </div>
+</nav>
+
 
     <div class="section-first">
       <div class="w-100" style="position:absolute;">
@@ -236,7 +296,39 @@ brand: index
       </div>
   </div>
 
-    {% include footer.html %}
+    <footer class="pt-5">
+  <div class="container-fluid">
+    <div class="row">
+      <h1 class="title-social">Our Social</h1>
+      <div class="col-md-3 col-sm-6">
+        <h5 class="title">Contact Us</h5>
+        <ul class="list-group mt-5 mb-5">
+          <li class="list-group-item">rarestoma@timmybear.com</li>
+          <li class="list-group-item">tomarares@timmybear.com</li>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <h5 class="title">More</h5>
+        <ul class="list-group mt-5 mb-5">
+          <a href="index.html" class="list-group-item">Home</a>
+          <a href="products.html" class="list-group-item">Shop</a>
+          <a href="about.html" class="list-group-item">About us</a>
+
+      </div>
+
+      <div class="col-sm-2">
+        <a href="https://www.instagram.com/timmysocks/?hl=ro" target="_blank"><h5 class="title">Instagram</h5></a>
+      </div>
+      <div class="col-sm-2">
+        <a href="https://www.facebook.com/Timmy-765846790458731/?modal=admin_todo_tour" target="_blank"><h5 class="title">Facebook</h5></a>
+      </div>
+      <div class="col-sm-2">
+        <p class="mt-5 pt-5" style="width:200px;"> © 2018 Timmy Bear </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
 
     <script src="../assets/js/core/jquery.3.2.1.min.js"></script>
     <script src="../assets/js/core/popper.min.js"></script>
