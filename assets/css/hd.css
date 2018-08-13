@@ -1064,10 +1064,10 @@
   min-height: 1000px;
   width: 100%; }
 .section-boxes img.sketch {
-  width: 40%;
+  width: 60%;
   position: absolute;
-  top: 45%;
-  left: 40%; }
+  top: 30%;
+  left: 15%; }
 .section-boxes img.d {
   position: absolute;
   opacity: 0.05;
@@ -2346,8 +2346,6 @@ input[type="radio"] {
   .section-colour-collection .card-colours h2 {
     font-size: 25px; }
 
-  .section-colour-collection img {
-    margin-top: 50px; }
 
   .section-boxes h1.title {
     font-size: 20px;
@@ -2389,6 +2387,23 @@ input[type="radio"] {
 @media (max-width: 576px) {
   .section-shop-carousel .carousel-item .image-container {
     width: 95%; }
+
+    .index .section-first{
+      min-height: 70vh;
+    }
+
+    .section-colour-collection img.donut{
+      width: 100%;
+    }
+
+
+
+.section-boxes img.sketch {
+    width: 75%;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
 
   .big-box-1 {
     height: 150px;
