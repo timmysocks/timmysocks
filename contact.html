@@ -90,7 +90,7 @@
           <div class="card card-white px-5 py-5 mt-5 mb-5">
             <div class="row">
               <div class="col-sm-6 mb-5 text-left">
-                <form id="contact-form" method="post" action="">
+                <form id="contact-form" method="post" action="contact-form.php">
                   <!-- <h3 class="info-text"> Lasa-ne un mesaj</h3>
                   <div class="form-group">
                     <label for="firstname" class="req">NUME:</label>
@@ -108,30 +108,15 @@
                   </div>
 
                   <button class="btn btn-blue btn-lg mt-0 ml-0">Trimite</button> -->
+                  <input name="name" type="text" class="form-control" placeholder="your name" required>
+                  <br>
+                  <input name="email" type="email" class="form-control" placeholder="your email" required>
+                  <br>
+                  <textarea name="message" class="form-control" placeholder="message" row="4" required></textarea>
+                  <br>
+                  <input type="submit" class="form-control" value="send message">
 
-                  <fieldset>
-                    <input placeholder="Your name" type="text" name="name" value="<?= $name ?>" tabindex="1" autofocus>
 
-                  </fieldset>
-                  <fieldset>
-                    <input placeholder="Your Email Address" type="text" name="email" value="<?= $email ?>" tabindex="2">
-
-                  </fieldset>
-                  <fieldset>
-                    <input placeholder="Your Phone Number" type="text" name="phone" value="<?= $phone ?>" tabindex="3">
-
-                  </fieldset>
-                  <fieldset>
-                    <input placeholder="Your Web Site starts with http://" type="text" name="url" value="<?= $url ?>" tabindex="4" >
-
-                  </fieldset>
-                  <fieldset>
-                    <textarea  name="message" tabindex="5">
-                    </textarea>
-                  </fieldset>
-                  <fieldset>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                  </fieldset>
                 </form>
 
               </div>
