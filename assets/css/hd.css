@@ -1762,6 +1762,7 @@ input[type="radio"] {
   color: #6b6; }
 
 @media screen and (max-width: 992px) {
+
   .column-labels label {
     font-size: 10px; }
 
@@ -1864,6 +1865,10 @@ input[type="radio"] {
     width: 170px; }
   .section-shop-carousel .carousel-indicators li.active {
     width: 175px; }
+
+    .carousel-inner .price{
+      right: 8% !important;
+    }
 
   .section-shop-carousel .carousel-indicators li {
     height: 150px; }
@@ -2879,6 +2884,26 @@ p.info-text-pharagraph {
 
 .carousel-inner {
   height: 100vh; }
+.carousel-inner .price{
+  position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    z-index: 2;
+    border: 2px dashed white;
+    border-right: none;
+    border-bottom: none;
+    font-size: 60px;
+    right: 22%;
+    color: white;
+    top: 18%;
+    padding: 13px 20px;
+    font-weight: 500;
+}
+.carousel-inner .price span{
+  font-size: 24px;
+}
 .carousel-inner .carousel-item {
   height: 100%; }
 .carousel-inner .carousel-item #accordion, .carousel-inner .carousel-item #accordionTank, .carousel-inner .carousel-item #accordionDuck {
