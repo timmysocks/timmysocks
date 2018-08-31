@@ -326,25 +326,30 @@
   margin-top: -900px;
   opacity: 0.1; }
 .section-shop-carousel .carousel-item .image-container img {
-  width: 100%; }
+  width: 65%;
+  margin-top: 0px;
+  margin-left: 120px; }
 .section-shop-carousel .carousel-item .image-container .small-circles {
   position: absolute;
   left: 50%;
   top: 50%; }
 .section-shop-carousel .carousel-item .image-container .small-circles .small-circle-dashed {
-  height: 150px;
-  width: 150px;
+  height: 70px;
+  width: 70px;
   border-right: 2px dashed white;
-  border-radius: 50%; }
+  border-radius: 50%;
+  margin-left: 61px;
+     margin-top: 43px;
+ }
 .section-shop-carousel .carousel-item .image-container .small-circles .small-circle-dashed .small-circle {
   animation: rotate-reverse 30s linear infinite;
   position: absolute;
   height: 50px;
   width: 50px;
-  border: 2px dashed #1dbbf9;
+  border: 2px dashed #050a0f;
   border-radius: 50%;
-  top: 33%;
-  left: 35%; }
+  top: 45%;
+  left: 53%; }
 .section-shop-carousel .carousel-item .image-container .small-circles .small-circle-dashed .small-circle .circle-point {
   position: absolute;
   top: 50%;
@@ -356,11 +361,11 @@
   border-radius: 50%; }
 .section-shop-carousel .carousel-item .image-container .small-circles .small-circle-dashed badge {
   position: absolute;
-  top: 50%;
+  top: 67%;
   transform: translate(0, -50%);
-  left: 105%;
-  background: #1cafed8a;
-  border: 2px solid #1cafed;
+  left: 132%;
+  background: #b7d5ff80;
+  border: 2px solid #b7d6ff;
   padding: 5px 10px;
   border-radius: 20px;
   font-weight: 600;
@@ -371,7 +376,7 @@
   top: 50%;
   right: 103%;
   transform: translate(0, -50%);
-  background: rgba(255, 255, 255, 0.5);
+  background: rgb(178, 208, 255);
   width: 0px;
   height: 2px;
   animation: increase 1s ease 1s;
@@ -385,12 +390,12 @@
   animation-fill-mode: forwards; }
 .section-shop-carousel .carousel-item .image-container .big-rotating-circle {
   animation: rotate 30s linear infinite;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   position: absolute;
-  left: -15%;
-  top: -25px;
-  border: 2px dashed #1dbbf9;
+  left: 15%;
+  top: -3px;
+  border: 2px dashed #050a0f;
   border-radius: 50%; }
 .section-shop-carousel .carousel-item h1 {
   position: absolute;
@@ -1097,13 +1102,12 @@
   border-radius: 50%;
   margin-bottom: 50px; }
 .section-boxes .circle .circle-dashed {
-  height: 90px;
-  width: 90px;
-  border: 2px dashed #ffffff7d;
-  border-style: dashed;
-  border-radius: 50%;
-  margin: auto;
-  margin-top: 13px; }
+  height: 70px;
+width: 70px;
+border-right: 2px dashed white;
+border-radius: 50%;
+margin-left: 59px;
+margin-top: 40px; }
 .section-boxes .circle .circle-dashed i {
   color: white;
   font-size: 45px;
@@ -2894,11 +2898,11 @@ p.info-text-pharagraph {
     border: 2px dashed white;
     border-right: none;
     border-bottom: none;
-    font-size: 60px;
+    font-size: 45px;
     right: 22%;
     color: white;
     top: 18%;
-    padding: 13px 20px;
+    padding: 23px 16px;
     font-weight: 500;
 }
 .carousel-inner .price span{
