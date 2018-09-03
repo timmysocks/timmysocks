@@ -1270,7 +1270,8 @@ margin-top: 25px; }
   background-image: url("../../assets/img/duck-color.png"); }
 
 .about .section-first {
-  height: 100vh !important;
+  min-height: 100vh !important;
+  height: auto;
   overflow: hidden; }
 .about .section-first h2 {
   font-size: 50px;
@@ -2022,8 +2023,7 @@ input[type="radio"] {
     font-size: 14px;
     padding: 10px 10px !important;
     line-height: 20px;
-    margin-bottom: 5px;
-    margin-top: 80px; }
+    margin-bottom: 5px; }
   .about .section-first img {
     opacity: 0.1; }
 
@@ -2484,6 +2484,9 @@ input[type="radio"] {
     left: 10%;
 }
 
+footer .title{
+  margin-top: 15px;
+}
   .big-box-1 {
     height: 150px;
     width: 200px; }
@@ -2717,7 +2720,21 @@ input[type="radio"] {
     font-size: 10px;
     margin-top: 30px;
     line-height: 13px;
-    width: auto; } }
+    width: auto; }
+    .section-shop-carousel .carousel-item .image-container img{
+      width: 85%;
+    }
+    .carousel .carousel-inner .price{
+      height: 80px;
+      width: 80px;
+      padding: 15px 11px;
+      font-size: 30px;
+    }
+    .carousel .carousel-inner .price span{
+      font-size: 12px;
+    }
+
+  }
 .nav-tabs {
   border-bottom: 5px solid orange; }
 .nav-tabs .nav-item {
