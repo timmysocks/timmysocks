@@ -1175,12 +1175,12 @@
 width: 70px;
 border-right: 2px dashed white;
 border-radius: 50%;
-margin-left: 59px;
-margin-top: 40px; }
+margin-left: 20px;
+margin-top: 25px; }
 .section-boxes .circle .circle-dashed i {
   color: white;
-  font-size: 45px;
-  padding: 20px; }
+  font-size: 37px;
+  padding: 16px; }
 .section-boxes .info h1.title {
   color: white;
   font-family: 'Dosis';
@@ -1315,9 +1315,6 @@ margin-top: 40px; }
   width: 13%; }
 .about .col-md-6, .login .col-md-6, .card .col-md-6 {
   padding: 0; }
-
-.about {
-  overflow: hidden; }
 .about h1 {
   text-shadow: none;
   margin-top: 200px; }
@@ -1338,7 +1335,7 @@ margin-top: 40px; }
 .about h2 i:last-child {
   top: 0;
   right: 0; }
-.about p {
+.about .container p {
   padding: 20px 150px;
   font-size: 16px;
   line-height: 27px;
