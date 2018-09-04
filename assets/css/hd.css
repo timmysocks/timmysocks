@@ -1234,10 +1234,22 @@ margin-top: 25px; }
   background-size: cover;
   margin-left: auto;
   margin-right: auto; }
+
+.section-collection .card-collection:after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    left: 0;
+    border-radius: 5px;
+  }
 .section-collection .card-collection img {
   width: 100%;
   margin-top: -100px;
-  margin-left: -50px; }
+  margin-left: -50px;
+  position: relative;
+  z-index: 2;}
 .section-collection .card-collection .basket {
   position: absolute;
   height: 100px;
@@ -1429,7 +1441,7 @@ button.navbar-toggler .navbar-toggler-icon .line {
   vertical-align: middle;
   border-radius: 3px;
   font-size: 10px;
-  padding: 7px 25px !important; }
+  padding: 10px 50px !important; }
 .btn:hover, a.btn:hover {
   background: transparent;
   color: white; }
@@ -1551,7 +1563,7 @@ button.navbar-toggler .navbar-toggler-icon .line {
 .btn.btn-icon i, a.btn.btn-icon i {
   margin-left: 15px; }
 .btn.btn-lg, a.btn.btn-lg {
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 4px; }
 .btn.btn-lg i, a.btn.btn-lg i {
   font-size: 20px; }
@@ -2982,7 +2994,6 @@ p.info-text-pharagraph {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.12);
     z-index: 2;
-    border: 2px dashed white;
     border-right: none;
     border-bottom: none;
     font-size: 45px;
