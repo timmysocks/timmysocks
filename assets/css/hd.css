@@ -1647,9 +1647,18 @@ button.navbar-toggler .navbar-toggler-icon .line {
   color: white;
   z-index: 10;
   border: 2px solid orange; }
+
+  .btn-perceed a{
+    color: white;
+  }
+
 .btn-perceed:hover {
   background: white;
   color: orange; }
+
+  .btn-perceed:hover a{
+    color: black;
+  }
 
 .btn-box {
   cursor: pointer;
