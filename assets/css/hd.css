@@ -2862,6 +2862,10 @@ footer .title{
       width: 20% !important;
     }
 
+    .section-100 p.description{
+      line-height: 20px;
+    }
+
   }
 
   @media (max-width: 350px) {
