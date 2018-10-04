@@ -3541,6 +3541,7 @@ input[type="radio"] {
 }
 
 .section-100 .description{
+  padding-bottom: 50px;
   font-size: 20px;
   color: #ffd443;
   font-family: 'Fira Sans';
