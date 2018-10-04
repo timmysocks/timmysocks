@@ -20,6 +20,13 @@ $(document).ready(function(){
         'slow');
     });
 
+    $(".scroll-to-100").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".section-100").offset().top},
+        'slow');
+    });
+
+
     $(".btn-box").click(function(){
       $(this).closest(".big-box-1").addClass("before-buy");
       $(this).closest(".big-box-1").removeClass("hover");
