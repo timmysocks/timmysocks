@@ -3528,6 +3528,11 @@ input[type="radio"] {
   margin-top: -10px;
 }
 
+.card-model .price span{
+  font-size: 12px;
+  margin-left: 2px;
+}
+
 .section-100 .row img{
   width: 40%;
   margin-top: 50px;
