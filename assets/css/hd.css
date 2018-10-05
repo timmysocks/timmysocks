@@ -403,7 +403,10 @@
   padding: 5px 10px;
   border-radius: 20px;
   font-weight: 600;
-  animation: opacity 1s; }
+  animation: opacity 1s;
+  font-size: 12px;
+  color: white;
+  }
   .section-shop-carousel .carousel-item.carousel-item-tank .image-container .small-circles .small-circle-dashed span{
     background: rgba(255,255,255,0.2);
     border-color: white;
@@ -437,13 +440,7 @@
   height: 2px;
   animation: increase 1s ease 1s;
   animation-fill-mode: forwards; }
-.section-shop-carousel .carousel-item .image-container .small-circles .small-circle-dashed span p {
-  font-size: 12px;
-  color: white;
-  margin: 0;
-  opacity: 0;
-  animation: opacity 1s ease 2s;
-  animation-fill-mode: forwards; }
+
 .section-shop-carousel .carousel-item .image-container .big-rotating-circle {
   animation: rotate 30s linear infinite;
   height: 150px;
@@ -1671,19 +1668,21 @@ button.navbar-toggler .navbar-toggler-icon .line {
   background: #555;
   color: white; }
 
-.btn-perceed {
+a.btn-perceed {
   position: relative;
   margin-right: auto;
   margin-left: auto;
+  max-width: 190px;
   background: orange;
   padding: 10px 43px;
   color: white;
   z-index: 10;
   border: 2px solid orange; }
 
-  .btn-perceed a{
-    color: white;
-  }
+
+a.btn-perceed:hover{
+  color: #090909;
+}
 
 .btn-perceed:hover {
   background: white;
