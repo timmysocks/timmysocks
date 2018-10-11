@@ -612,6 +612,7 @@
 .tabs-section .nav-tabs .nav-item h5 {
   position: absolute;
   text-align: center;
+  font-size: 14px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -733,7 +734,7 @@
 .big-box-1 .btn-box:focus, .big-box-1 .btn-modify:focus, .big-box-1 .btn-perceed:focus {
   box-shadow: none; }
 .big-box-1 select.form-control {
-  height: 30px !important; }
+  height: 35px !important; }
 
 .box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
   height: 190px;
@@ -815,14 +816,14 @@
   transform: translate(0); }
 #box5-donut .box-4 {
   left: 5%;
-  bottom: 22%;
+  bottom: 21%;
   transform: translate(0); }
 #box5-donut .box-5 {
-  bottom: 22%;
+  bottom: 21%;
   left: 50%;
   transform: translate(-50%); }
 #box5-donut .box-6 {
-  bottom: 22%;
+  bottom: 21%;
   right: 5%;
   transform: translate(0); }
 
@@ -3122,8 +3123,8 @@ p.info-text-pharagraph {
     height: 120px;
     width: 120px;
     border-radius: 50%;
-    background: rgba(0, 0, 0, 0.4);
-    border: 2px solid rgb(66, 66, 66);
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #fff;
     z-index: 2;
     font-size: 55px;
     right: 22%;
