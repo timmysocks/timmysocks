@@ -358,11 +358,22 @@
         <ul class="list-group">
           <li class="list-group-item">contact@timmysocks.com</li>
           <script>
-              document.write(new Date().getFullYear())
 
-              document.write(new Date().getMonth()+1)
+          var today = new Date();
+          var dd = today.getDate();
+          var mm = today.getMonth()+1; //January is 0!
+          var yyyy = today.getFullYear();
 
-              document.write(new Date().getDay())
+          if(dd<10) {
+            dd = '0'+dd
+          }
+
+          if(mm<10) {
+            mm = '0'+mm
+          }
+
+          today = mm + '.' + dd + '.' + yyyy;
+          document.write(today);
 
 
           </script>

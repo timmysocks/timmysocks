@@ -162,12 +162,21 @@
           <li class="list-group-item">contact@timmysocks.com</li>
 
           <script>
+          var today = new Date();
+          var dd = today.getDate();
+          var mm = today.getMonth()+1; //January is 0!
+          var yyyy = today.getFullYear();
 
-            document.write(new Date().getFullYear())
+          if(dd<10) {
+            dd = '0'+dd
+          }
 
-            document.write(new Date().getMonth()+1)
+          if(mm<10) {
+            mm = '0'+mm
+          }
 
-            document.write(new Date().getDay())
+          today = mm + '.' + dd + '.' + yyyy;
+          document.write(today);
           </script>
         </ul>
       </div>
