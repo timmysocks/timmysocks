@@ -1089,7 +1089,7 @@
   background: white;
   box-shadow: 0px 10px 60px 1px rgba(0, 0, 0, 0.13);
   border-radius: 60px;
-  width: 425px; }
+  width: 320px; }
 .section-colour-collection .colours .nav-tabs {
   border: none; }
 .section-colour-collection .colours .nav-tabs .nav-item .nav-link {
@@ -1156,7 +1156,7 @@
   padding: 30px;
   border-radius: 6px;
   background: white;
-  width: 425px;
+  width: 320px;
   text-align: center;
   box-shadow: 0px 10px 60px 1px rgba(0, 0, 0, 0.13); }
 .section-colour-collection .card-colours h2 {
