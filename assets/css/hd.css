@@ -1698,8 +1698,8 @@ a.btn-perceed:hover{
   position: relative;
   top: 90%;
   border: 2px solid orange;
-  color: white;
-  background: orange;
+  color: white !important;
+  background: orange !important;
   padding: 10px 43px; }
 .btn-box:hover {
   background: white;
