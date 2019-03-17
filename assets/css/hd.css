@@ -710,7 +710,8 @@ overflow: hidden;
 .big-box-1.hover .btn-box, .big-box-1:hover .btn-box {
   opacity: 1;
   display: block;
-  margin: auto; }
+  margin: auto;
+  z-index: 9999;}
 .big-box-1.before-buy:after {
   content: "";
   position: absolute;
@@ -720,15 +721,11 @@ overflow: hidden;
   left: 0%;
   top: 0%;
   transition: 3s ease;
-  border-radius: 3px; }
-.big-box-1.before-buy .btn-box {
-  opacity: 0;
-  transition: 0.2s ease; }
+  border-radius: 3px; }}
 .big-box-1.before-buy:hover .btn-modify, .big-box-1.before-buy:hover .btn-perceed {
   opacity: 1;
   display: block; }
-.big-box-1 .swiper-wrapper {
-  height: 100%; }
+
 .big-box-1 .swiper-wrapper .swiper-slide img {
   position: absolute;
   width: 50%;
@@ -739,10 +736,6 @@ overflow: hidden;
   background-size: 50%; }
 .big-box-1 .box-1, .big-box-1 .box-2, .big-box-1 .box-3, .big-box-1 .box-4, .big-box-1 .box-5, .big-box-1 .box-6 {
   opacity: 0; }
-.big-box-1 .btn-box, .big-box-1 .btn-modify, .big-box-1 .btn-perceed {
-  display: none;
-  opacity: 0;
-  cursor: pointer; }
 .big-box-1 .btn-box:focus, .big-box-1 .btn-modify:focus, .big-box-1 .btn-perceed:focus {
   box-shadow: none; }
 .big-box-1 select.form-control {
