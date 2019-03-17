@@ -27,14 +27,8 @@ $(document).ready(function(){
     });
 
 
-    $(".btn-box").click(function(){
-      $(this).closest(".big-box-1").addClass("before-buy");
-      $(this).closest(".big-box-1").removeClass("hover");
-    });
 
-    $(".btn-modify").click(function(){
-      $(this).closest(".big-box-1").removeClass("before-buy");
-    });
+
 
     //quantity add and remove buttons
 
